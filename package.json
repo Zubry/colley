@@ -1,14 +1,32 @@
 {
-  "name": "colley",
+  "name": "colley-rankings",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple API for computing Colley rankings",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Zubry",
   "license": "ISC",
   "dependencies": {
     "m4th": "^0.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zubry/colley.git"
+  },
+  "keywords": [
+    "colley",
+    "matrix",
+    "college",
+    "football",
+    "cfb",
+    "ranking",
+    "matrices"
+  ],
+  "bugs": {
+    "url": "https://github.com/Zubry/colley/issues"
+  },
+  "homepage": "https://github.com/Zubry/colley#readme"
 }
