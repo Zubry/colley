@@ -36,3 +36,9 @@ Solves the Colley matrix, outputting an n x 1 column matrix (see [m4th](https://
     C.addGame(winner_id, loser_id);
 
     console.log(C.solve());
+
+**Result**
+
+    { columns: 1,
+      rows: 5,
+      array: [ 0.5, 0.5, 0.375, 0.5, 0.6250000000000001 ] }

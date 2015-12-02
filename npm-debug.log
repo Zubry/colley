@@ -14,18 +14,18 @@
 7 silly cache add   rawSpec: '.',
 7 silly cache add   spec: '/home/m/Documents/zubry/javascript/colley-matrix',
 7 silly cache add   type: 'directory' }
-8 verbose addLocalDirectory /home/m/.npm/colley-rankings/1.0.0/package.tgz not in flight; packing
-9 verbose tar pack [ '/home/m/.npm/colley-rankings/1.0.0/package.tgz',
+8 verbose addLocalDirectory /home/m/.npm/colley-rankings/1.0.1/package.tgz not in flight; packing
+9 verbose tar pack [ '/home/m/.npm/colley-rankings/1.0.1/package.tgz',
 9 verbose tar pack   '/home/m/Documents/zubry/javascript/colley-matrix' ]
-10 verbose tarball /home/m/.npm/colley-rankings/1.0.0/package.tgz
+10 verbose tarball /home/m/.npm/colley-rankings/1.0.1/package.tgz
 11 verbose folder /home/m/Documents/zubry/javascript/colley-matrix
-12 info prepublish colley-rankings@1.0.0
-13 verbose addLocalTarball adding from inside cache /home/m/.npm/colley-rankings/1.0.0/package.tgz
-14 silly cache afterAdd colley-rankings@1.0.0
-15 verbose afterAdd /home/m/.npm/colley-rankings/1.0.0/package/package.json not in flight; writing
-16 verbose afterAdd /home/m/.npm/colley-rankings/1.0.0/package/package.json written
+12 info prepublish colley-rankings@1.0.1
+13 verbose addLocalTarball adding from inside cache /home/m/.npm/colley-rankings/1.0.1/package.tgz
+14 silly cache afterAdd colley-rankings@1.0.1
+15 verbose afterAdd /home/m/.npm/colley-rankings/1.0.1/package/package.json not in flight; writing
+16 verbose afterAdd /home/m/.npm/colley-rankings/1.0.1/package/package.json written
 17 silly publish { name: 'colley-rankings',
-17 silly publish   version: '1.0.0',
+17 silly publish   version: '1.0.1',
 17 silly publish   description: 'A simple API for computing Colley rankings',
 17 silly publish   main: 'index.js',
 17 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
@@ -46,9 +46,9 @@
 17 silly publish   homepage: 'https://github.com/Zubry/colley#readme',
 17 silly publish   readme: '# Colley Rankings\n\nColley’s bias free ranking method was designed to rank college football teams fairly and without bias, using only wins and losses as the only inputs.\n\nFrom the [Colley Rankings website](http://www.colleyrankings.com/matrate.pdf):\n\n> The method is based on very simple statistical principles, and uses only Div. I-A wins and losses as input — margin of victory does not matter. The scheme adjusts effectively for strength of schedule, in a way that is free of bias toward conference, tradition, or region. Comparison of rankings produced by this method to those produced by the press polls shows that despite its simplicity, the scheme produces common sense results.\n\nAlthough the Colley ranking method was designed for college football, it can be applied to any other system where bias-free rankings are desired.\n\nIt should be noted, however, that the Colley ranking method does not attempt to determine the strength of each competitor, but rather the "deservedness" of the competitor. That is, the Colley matrix favors teams who play well against difficult schedules over teams that skate through easier ones.\n\n# Installation\n\n`npm install --save colley-rankings`\n\n# Use\n\nThe API exposes two methods:\n\n## Colley.addGame(winner, loser)\n\nRecords a game between two teams in the Colley matrix. The parameters `winner` and `loser` represent the IDs of each team. Each ID should be between 0 and n-1, where n is the number of teams in the league.\n\n## Colley.solve()\n\nSolves the Colley matrix, outputting an n x 1 column matrix (see [m4th](https://github.com/hhelwich/m4th) for more information).\n\n# Example\n\n    let Colley = require(\'colley-rankings\');\n    let C = Colley(5) // Create a 5-team league\n\n    let winner_id = 4;\n    let loser_id = 2;\n    C.addGame(winner_id, loser_id);\n\n    console.log(C.solve());\n',
 17 silly publish   readmeFilename: 'README.md',
-17 silly publish   gitHead: 'a6e7d3ac4fd4868f6350e76e34e4eb96ffb5c0da',
-17 silly publish   _id: 'colley-rankings@1.0.0',
-17 silly publish   _shasum: 'd2049f8f5ab23cfecfe793e8ca18839a5565657c',
+17 silly publish   gitHead: '129626635066e57563c871b566f271bcfc53bcaa',
+17 silly publish   _id: 'colley-rankings@1.0.1',
+17 silly publish   _shasum: 'a86ac1c578b1aae9c71cad9d272c962c3bf7d06f',
 17 silly publish   _from: '.' }
 18 verbose getPublishConfig undefined
 19 silly mapToRegistry name colley-rankings
@@ -56,28 +56,28 @@
 21 silly mapToRegistry registry https://registry.npmjs.org/
 22 silly mapToRegistry uri https://registry.npmjs.org/colley-rankings
 23 verbose publish registryBase https://registry.npmjs.org/
-24 silly publish uploading /home/m/.npm/colley-rankings/1.0.0/package.tgz
+24 silly publish uploading /home/m/.npm/colley-rankings/1.0.1/package.tgz
 25 verbose request uri https://registry.npmjs.org/colley-rankings
 26 verbose request sending authorization for write operation
-27 info attempt registry request try #1 at 8:28:20 PM
+27 info attempt registry request try #1 at 8:31:02 PM
 28 verbose request using bearer token for auth
-29 verbose request id 8f1f8e5b23d9f3b4
+29 verbose request id c8a4a7fc6b9890d8
 30 http request PUT https://registry.npmjs.org/colley-rankings
 31 http 403 https://registry.npmjs.org/colley-rankings
 32 verbose headers { 'content-type': 'application/json',
 32 verbose headers   'cache-control': 'max-age=60',
 32 verbose headers   'content-length': '95',
 32 verbose headers   'accept-ranges': 'bytes',
-32 verbose headers   date: 'Wed, 02 Dec 2015 01:28:21 GMT',
+32 verbose headers   date: 'Wed, 02 Dec 2015 01:31:03 GMT',
 32 verbose headers   via: '1.1 varnish',
 32 verbose headers   connection: 'keep-alive',
-32 verbose headers   'x-served-by': 'cache-jfk1022-JFK',
+32 verbose headers   'x-served-by': 'cache-iad2138-IAD',
 32 verbose headers   'x-cache': 'MISS',
 32 verbose headers   'x-cache-hits': '0',
-32 verbose headers   'x-timer': 'S1449019700.638175,VS0,VE758' }
+32 verbose headers   'x-timer': 'S1449019863.106213,VS0,VE773' }
 33 verbose request invalidating /home/m/.npm/registry.npmjs.org/colley-rankings on PUT
 34 error publish Failed PUT 403
-35 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : colley-rankings
+35 verbose stack Error: "You cannot publish over the previously published version 1.0.1." : colley-rankings
 35 verbose stack     at makeError (/home/m/.nvm/versions/io.js/v3.3.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:263:12)
 35 verbose stack     at CachingRegistryClient.<anonymous> (/home/m/.nvm/versions/io.js/v3.3.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:251:14)
 35 verbose stack     at Request._callback (/home/m/.nvm/versions/io.js/v3.3.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:171:14)
@@ -96,7 +96,7 @@
 41 error node v3.3.1
 42 error npm  v2.14.3
 43 error code E403
-44 error "You cannot publish over the previously published version 1.0.0." : colley-rankings
+44 error "You cannot publish over the previously published version 1.0.1." : colley-rankings
 45 error If you need help, you may report this error at:
 45 error     <https://github.com/npm/npm/issues>
 46 verbose exit [ 1, true ]
