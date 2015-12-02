@@ -46,7 +46,7 @@
 17 silly publish   homepage: 'https://github.com/Zubry/colley#readme',
 17 silly publish   readme: '# Colley Rankings\n\nColley’s bias free ranking method was designed to rank college football teams fairly and without bias, using only wins and losses as the only inputs.\n\nFrom the [Colley Rankings website](http://www.colleyrankings.com/matrate.pdf):\n\n> The method is based on very simple statistical principles, and uses only Div. I-A wins and losses as input — margin of victory does not matter. The scheme adjusts effectively for strength of schedule, in a way that is free of bias toward conference, tradition, or region. Comparison of rankings produced by this method to those produced by the press polls shows that despite its simplicity, the scheme produces common sense results.\n\nAlthough the Colley ranking method was designed for college football, it can be applied to any other system where bias-free rankings are desired.\n\nIt should be noted, however, that the Colley ranking method does not attempt to determine the strength of each competitor, but rather the "deservedness" of the competitor. That is, the Colley matrix favors teams who play well against difficult schedules over teams that skate through easier ones.\n\n# Installation\n\n`npm install --save colley-rankings`\n\n# Use\n\nThe API exposes two methods:\n\n## Colley.addGame(winner, loser)\n\nRecords a game between two teams in the Colley matrix. The parameters `winner` and `loser` represent the IDs of each team. Each ID should be between 0 and n-1, where n is the number of teams in the league.\n\n## Colley.solve()\n\nSolves the Colley matrix, outputting an n x 1 column matrix (see [m4th](https://github.com/hhelwich/m4th) for more information).\n\n# Example\n\n    let Colley = require(\'colley-rankings\');\n    let C = Colley(5) // Create a 5-team league\n\n    let winner_id = 4;\n    let loser_id = 2;\n    C.addGame(winner_id, loser_id);\n\n    console.log(C.solve());\n',
 17 silly publish   readmeFilename: 'README.md',
-17 silly publish   gitHead: '9bcb832d57a045809413d045d23b9acd6805f358',
+17 silly publish   gitHead: 'a6e7d3ac4fd4868f6350e76e34e4eb96ffb5c0da',
 17 silly publish   _id: 'colley-rankings@1.0.0',
 17 silly publish   _shasum: 'd2049f8f5ab23cfecfe793e8ca18839a5565657c',
 17 silly publish   _from: '.' }
@@ -59,22 +59,22 @@
 24 silly publish uploading /home/m/.npm/colley-rankings/1.0.0/package.tgz
 25 verbose request uri https://registry.npmjs.org/colley-rankings
 26 verbose request sending authorization for write operation
-27 info attempt registry request try #1 at 8:27:45 PM
+27 info attempt registry request try #1 at 8:28:20 PM
 28 verbose request using bearer token for auth
-29 verbose request id c796a87d92a6f651
+29 verbose request id 8f1f8e5b23d9f3b4
 30 http request PUT https://registry.npmjs.org/colley-rankings
 31 http 403 https://registry.npmjs.org/colley-rankings
 32 verbose headers { 'content-type': 'application/json',
 32 verbose headers   'cache-control': 'max-age=60',
 32 verbose headers   'content-length': '95',
 32 verbose headers   'accept-ranges': 'bytes',
-32 verbose headers   date: 'Wed, 02 Dec 2015 01:27:46 GMT',
+32 verbose headers   date: 'Wed, 02 Dec 2015 01:28:21 GMT',
 32 verbose headers   via: '1.1 varnish',
 32 verbose headers   connection: 'keep-alive',
-32 verbose headers   'x-served-by': 'cache-atl6221-ATL',
+32 verbose headers   'x-served-by': 'cache-jfk1022-JFK',
 32 verbose headers   'x-cache': 'MISS',
 32 verbose headers   'x-cache-hits': '0',
-32 verbose headers   'x-timer': 'S1449019665.833834,VS0,VE766' }
+32 verbose headers   'x-timer': 'S1449019700.638175,VS0,VE758' }
 33 verbose request invalidating /home/m/.npm/registry.npmjs.org/colley-rankings on PUT
 34 error publish Failed PUT 403
 35 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : colley-rankings
